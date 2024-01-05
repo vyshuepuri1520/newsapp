@@ -4,10 +4,21 @@ import NewsItem from './NewsItem'
 export class News extends Component {
   render() {
     return (
-      <div>
-        I am news Component
-        <NewsItem/>
-        <NewsItem/>
+      <div className='container my-3'>
+        <h2>NewsBreak- Top Headlines</h2>
+        <div className="row">
+          <div className="col-md-4">
+        <NewsItem title="mytitle" description = "mydescription"/>
+        </div>
+        <div className="col-md-4">
+        <NewsItem title="mytitle" description = "mydescription"/>
+        </div>
+        <div className="col-md-4">
+        <NewsItem title="mytitle" description = "mydescription"/>
+        </div>
+        </div>
+        
+        
         
       </div>
     )
