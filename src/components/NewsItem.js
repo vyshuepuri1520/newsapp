@@ -2,19 +2,18 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let {title,description} = this.props;
+    let {title,description,imageUrl,newsUrl} = this.props;
     return (
-      <div>
-        
+      <div className="my-3">       
         <div className="card" style={{width: "18rem"}}>
-          <img src="https://media.newyorker.com/photos/6579d39668872af306a7c711/16:9/w_1280,c_limit/Webster-Shouts-Cricket.jpg" className="card-img-top" alt="..." />
+          <img src={imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">
-             {description}
+             {description}...
             </p>
-            <a href="/" className="btn btn-primary">
-              Go somewhere
+            <a href={newsUrl} target = "_blank" className="btn btn-sm btn-primary">
+              Read More
             </a>
           </div>
         </div>
